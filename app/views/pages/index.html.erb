@@ -1,0 +1,11 @@
+<br>
+<h2>Características de los personajes:</h2>
+<ol>
+    <% Character.all.each do |c| %>
+        <li>
+            Nombre: <span class="character-name"><%= c.name %></span> <br>
+            Locación: <span class="character-location"><%= c.location %></span> <br>
+            Casa: <span class="character-house"><%= c.house %></span>
+        </li>
+    <% end %>
+</ol>
